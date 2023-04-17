@@ -115,7 +115,7 @@ printf("%d %d\n",a,b);
 
 using namespace std;
 
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    /* variable sized array
  int q,n,k;
     cin>>q>>n;
     int** a = new int* [n];
@@ -138,7 +138,24 @@ using namespace std;
         int jj = qarray[i][1];
         cout<<a[ii][jj]<<endl;
     }
-
+*/
+/* parser attribute
+int N,Q;
+cin>>N>>Q;
+//sstream ss;
+string Temp;
+vector<string> quer;
+vector<string> Line;
+cin.ignore();
+for(int i=0;i<N;i++){
+    getline(cin,Temp);
+    Line.push_back(Temp);
+}
+for(int i=0;i<Q;i++){
+    getline(cin,Temp);
+    quer.push_back(Temp);
+}
+*/
     return 0;
 }
 
